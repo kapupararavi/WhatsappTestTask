@@ -51,11 +51,11 @@ curl --location 'http://127.0.0.1:8000/api/wa/v1/send' \
 }'
 ```
 
-"""
 Currently the webhook has the code to save the text messages, its not updating the read receipt. Also for the models we can update them for filtering the message sent to/received from to perform operations, currently they're all separated so it may hard to filter records of specific person.
 
 To send the test message, a record should be added from admin panel to Test whatsapp message, and all other messages sent from API shown to the another model.
-"""
+
+
 
 I was thinking about adding the other apps like for authentication and adding the authentication classes to the separate app but since the API view and models were not too complex I decided to add it in one, I was also planning add the exception handler but its not required since its a demonstration.
 
